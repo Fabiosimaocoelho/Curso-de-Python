@@ -7,7 +7,7 @@ imc = peso / altura **2
 
 if imc < 18.5:
     print('Seu IMC é' , imc ,'Abaixo do peso normal')
-elif imc >= 18.5 and imc <= 24.9:
+elif imc >= 18.5 and imc  <= 24.9:
     print('Seu IMC é', imc, 'Peso normal')
 elif imc >= 25.5 and imc <= 29.9:
     print('Seu IMC é',imc, 'Excesso de peso')
@@ -18,4 +18,5 @@ elif imc >= 35.0 and imc <= 39.9:
 else:
     print('Obsidade classe III:')
 
-imc_correto = round(imc,2)
+imc_perfeito = round(imc,2)
+

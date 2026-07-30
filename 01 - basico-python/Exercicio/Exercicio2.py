@@ -19,7 +19,7 @@ Valor_produto = Valor_produto1 - Valor_produto2
 nota3 = float(input('Digite sua terceira nota: '))
 media = 0.0
 
-media = (nota1 + nota2 + nota3) / 3
+media = ('nota1 + nota2 + nota3') / 3
 
 print('A media do aluno é', media)
 
