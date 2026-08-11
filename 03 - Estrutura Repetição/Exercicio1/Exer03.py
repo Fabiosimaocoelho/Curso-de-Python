@@ -27,15 +27,37 @@
 # else:
 #     print('Saldo em conta 0')
 
-Saldo_inicial = 500
+# Saldo_inicial = 500
 
-print(f'Saldo inicial: R$ {Saldo_inicial:.2f}')
+# print(f'Saldo inicial: R$ {Saldo_inicial:.2f}')
 
+# while Saldo_inicial > 0:
+#     valor_saque = int(input('Você deseja sacar quanto?:'))
+#     if valor_saque <= Saldo_inicial:
+#         Saldo_inicial -= valor_saque
+#         print(f'saldo atual: R$ {Saldo_inicial:.2f}')
+#     continue
+# else:
+#     print('Saldo Negativo')
+
+# print("Program Encerrado")
+
+Saldo_inicial = 50
 while Saldo_inicial > 0:
-    valor_saque = int(input('Você deseja sacar quanto?:'))
-    if valor_saque <= Saldo_inicial:
-        Saldo_inicial -= valor_saque
-        print(f'saldo atual: R$ {Saldo_inicial:.2f}')
-    continue
+    saque = float(input('Desejar sacar quanto? (0 para encerrar o atendimentoi)'))
+
+    if saque == 0:
+        print("Atendimento Encerado")
+        break
+
+    if saque > Saldo_inicial:
+        print("Saldo Indisponivel")
+
+    Saldo_inicial = Saldo_inicial - saque
+    print(f"Saldo Restante {round(Saldo_inicial,2)}")
+
 else:
-    print('Saldo Negativo')
+    print("Saldo Zerado")
+
+print("Programa Encerrado")
+

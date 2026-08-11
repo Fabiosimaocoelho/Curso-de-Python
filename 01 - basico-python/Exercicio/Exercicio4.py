@@ -7,6 +7,4 @@ media = (nota1 + nota2 + nota3) / 3
 
 print = ('A media do aluno é', media)
 
-# print =  ('8.0')
-
-
+print =  ('8.0')

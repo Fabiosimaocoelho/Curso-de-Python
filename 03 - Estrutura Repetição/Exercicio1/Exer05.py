@@ -1,64 +1,3 @@
-# Exercícios Práticos - While
-# 1. O Caixa Eletrônico (Controle de Saldo e Validação)
-# Contexto: Você está desenvolvendo o sistema básico de um caixa eletrônico.
-# O cliente começa com um saldo inicial de R$ 500. Ele pode realizar sucessivos
-# saques até que decida parar ou seu saldo acabe.
-# Requisitos:
-# Crie um loop 
-# zero.
-# while
-#  que continue rodando enquanto o saldo for maior que
-# A cada iteração, solicite ao usuário o valor que deseja sacar (ou 0
-#  para
-# encerrar o atendimento).
-# Se o usuário digitar 0
-# , use a instrução 
-# break
-#  para encerrar o loop
-# imediatamente.
-# Se o valor do saque for maior que o saldo disponível, exiba uma mensagem
-# de erro e use 
-# continue
-#  para tentar uma nova operação sem descontar do
-# saldo.
-# Se o saque for válido, subtraia o valor do saldo e exiba o saldo restante.
-# Use o bloco 
-# else
-#  no final do 
-# while
-#  para exibir uma mensagem quando o
-# saldo zerar totalmente sem o uso do 
-# break 
-# .
-
-
-# 2. Controle de Estoque com Validação de Quantidade
-# Contexto: Uma loja precisa registrar a entrada de novos produtos no estoque
-# através de um painel simples. O sistema deve aceitar a inclusão de itens um a
-# um até atingir o limite máximo de 10 itens cadastrados na sessão.
-# Requisitos:
-# Inicialize uma variável 
-# Escreva um loop 
-# contador = 0 
-# .
-# while
-#  que execute enquanto 
-# contador < 10 
-# .
-# Em cada iteração, peça para o usuário digitar a quantidade de itens a
-# adicionar ao lote.
-# Se o usuário digitar um valor negativo ou igual a zero, exiba uma
-# mensagem dizendo "Quantidade inválida!" e use a instrução 
-# continue
-#  para
-# 1
-# Exercícios Práticos - While
-# repetir a tentativa sem incrementar o contador.
-# A cada entrada válida, incremente a variável 
-# contador
-#  com a quantidade
-# inserida e mostre o total acumulado até o momento.
-
 
 # 3. Jogo da Adivinhação com Tentativas Limitadas
 # Contexto: Em um minigame, o jogador precisa adivinhar um número secreto
@@ -89,3 +28,36 @@
 #  para exibir a mensagem de
 # "Game Over! Suas tentativas acabaram." caso o jogador não consiga
 # acertar dentro das 5 chances.
+
+import random
+
+numero_secreto = random.randint(1,150)
+tentativas = 5
+
+print("=== Voce Tera Cinco Tentativas  ===")
+while tentativas >= 0:
+    chute = int(input("Numero Secreto entre 1 e 150: "))
+
+    # tentativas +=1
+    if chute == numero_secreto:
+        print("Parabéns, voce acertou! ")
+        break
+
+    if chute > numero_secreto:
+        print('Numero Secreto é menor')
+    else:
+        print('Numero Secreto é maior')
+
+    tentativas -= 1
+    print(f'Voce tem {tentativas} tentativas')
+else:
+    print('GAME OVERRRRRR - NOOB')
+
+
+   
+
+
+    
+
+
+    
