@@ -32,18 +32,18 @@
 # # Continue
 # print('=== Continue ===')
 
-e = 1
-while e < 10:
-    e += 1
-    if e == 4:
-        continue
-    print(e)
+# e = 1
+# while e < 10:
+#     e += 1
+#     if e == 4:
+#         continue
+#     print(e)
 
-# else
-print('=== Else ===')
-r = 1
-while r < 6:
-    print(r)
-    r += 1
-else:
-    print('Condição deu Falos')
+# # else
+# print('=== Else ===')
+# r = 1
+# while r < 6:
+#     print(r)
+#     r += 1
+# else:
+#     print('Condição deu Falos')

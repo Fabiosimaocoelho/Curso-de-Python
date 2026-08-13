@@ -28,3 +28,4 @@ for i in carrinho_compras:
     soma = soma + i
 
 print(f'A soma total dos produtos foi de R$ {soma},00')
+

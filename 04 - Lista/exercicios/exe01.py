@@ -29,6 +29,15 @@ media = 0
 for i in notas:
     media = media + i
 
-print(f'A media do aluna é {media}')
+media = media / len(notas)
+
+# print(f'A media do aluna é {media}')
+
+if media >= 7:
+    print(f'Sua media foi {round(media,2)}) - APROVADO')
+elif media >= 5 and media <= 6.9:
+    print(f'Sua media foi {round(media,2)}) - RECUPERACAO')
+else:
+    print(f'Sua media foi {round(media,2)}) - REPROVADO')
 
 
