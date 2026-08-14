@@ -31,16 +31,16 @@
 # for 
 # , 
 
-quadrado = []
-qtd_numeros = int(input('Favor informar lista:'))
-for i in range(qtd_numeros):
-    nome = input('Qual numero? ')
-    quadrado.append(quadrado)
+quadrados = []
+soma_quadrados = 0
 
-quadrado = [4, 25, 9, 100, 16]
-soma = 0
+for i in range(5):
+    numero = int(input('Qual numero?: '))
+    quadrado = numero **2
+    quadrados.append(quadrado)
 
-for i in quadrado:
-    print(f'quadrados: {i}')
+for i in quadrados:
+    print(i)
+    soma_quadrados = soma_quadrados * 1
 
-
+print(f'quadrados: {i}')
