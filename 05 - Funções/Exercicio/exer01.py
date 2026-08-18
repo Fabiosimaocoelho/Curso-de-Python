@@ -8,3 +8,5 @@ def soma (a, b):
     return a + b
 total = soma(25,45)
 print(f'O total da soma foi de: {total}')
+
+
