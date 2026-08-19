@@ -1,14 +1,26 @@
+# carrinho_compras = [150, 260, 100, 50, 60]
+# lista = [1,2,3,4,5]
+# somaLista = 0
+# somaCarrinhoCompra = 0
+
+# for i in carrinho_compras:
+#     somaCarrinhoCompra = somaCarrinhoCompra + i
+
+# for i in lista:
+#     somaLista = somaLista + i
+
+# print(somaLista)
+# print(somaCarrinhoCompra)
+
+# COM FUNCAO 
 carrinho_compras = [150, 260, 100, 50, 60]
-lista = [1,2,3,4,5]
-somaLista = 0
-somaCarrinhoCompra = 0
+def soma_lista(lista):
+    soma = 0
+    for i in lista:
+        soma += i
+        
+    return soma
 
-for i in carrinho_compras:
-    somaCarrinhoCompra = somaCarrinhoCompra + i
-
-for i in lista:
-    somaLista = somaLista + i
-
-print(somaLista)
-print(somaCarrinhoCompra)
+soma_carrinho = soma_lista(carrinho_compras)
+print(f'A soma do carrinho de compras foi de {soma_carrinho}')
 
