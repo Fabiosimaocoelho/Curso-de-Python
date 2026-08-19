@@ -1,14 +1,14 @@
 # OPERACOES ARITMETICAS
-numero1 = 10
-numero2 = 2
+# numero1 = 10
+# numero2 = 2
 
-soma = numero1 + numero2
-subtracao = numero1 - numero2
-divisao_exata = numero1 / numero2
-potencia = numero1 ** numero2
-divisao_arredondada = numero1 // numero2
-multiplicacao = numero1 * numero2
-resto_divisao = numero1 % numero2
+# soma = numero1 + numero2
+# subtracao = numero1 - numero2
+# divisao_exata = numero1 / numero2
+# potencia = numero1 ** numero2
+# divisao_arredondada = numero1 // numero2
+# multiplicacao = numero1 * numero2
+# resto_divisao = numero1 % numero2
 
 # print("A soma de", numero1, " + ", numero2, " = ", soma)
 # print('A subtracao de', numero1, " - ", numero2, ' = ', subtracao)
@@ -22,6 +22,7 @@ resto_divisao = numero1 % numero2
 #Convertendo o valor do input para float ou int
 nota1 = float(input('Digite sua primeira nota: '))
 nota2 = float(input('Digite sua segunda nota: '))
+nota3 = float(input('Digite sua segunda nota: '))
 media = 0.0
 
 media = (nota1 + nota2) / 2
